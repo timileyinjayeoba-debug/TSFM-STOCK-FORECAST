@@ -1,0 +1,11 @@
+yfinance
+pandas
+numpy
+matplotlib
+scikit-learn
+torch
+transformers
+git+https://github.com/amazon-science/chronos-forecasting.git
+pyyaml
+tqdm
+scipy
