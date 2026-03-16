@@ -34,7 +34,7 @@ def build_market_data(cfg):
         logger.info(f"Saved {raw_path} ({len(df)} rows)")
 
         df["asset"] = ticker
-        frames.append(df[["close", "volume", "asset"]])
+        frames.append(df[["open", "high", "low", "close", "volume", "asset"]])
 
     # Combine both into one market_data.csv
     market = pd.concat(frames, axis=0).reset_index()
